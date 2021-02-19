@@ -47,18 +47,17 @@ exts_default_options = {
 
 
 # order is important!
-# package versions updated 13 October 2020
+# package versions updated 19 February 2021
 exts_list = [
-    ('pip', '20.2.3', {
+    ('pip', '21.0.1', {
         'use_pip': False,
-        'checksums': ['30c70b6179711a7c4cf76da89e8a0f5282279dfb0278bec7b94134be92543b6d'],
+        'checksums': ['99bbde183ec5ec037318e774b0d8ae0a64352fe53b2c7fd630be1d07e94f41e5'],
     }),
-    ('setuptools', '50.3.0', {
-        'source_tmpl': '%(name)s-%(version)s.zip',
-        'checksums': ['39060a59d91cf5cf403fa3bacbb52df4205a8c3585e0b9ba4b30e0e19d4c4b18'],
+    ('setuptools', '53.0.0', {
+        'checksums': ['1b18ef17d74ba97ac9c0e4b4265f123f07a8ae85d9cd093949fa056d3eeeead5'],
     }),
-    ('wheel', '0.35.1', {
-        'checksums': ['99a22d87add3f634ff917310a3d87e499f19e663413a52eb9232c447aa646c9f'],
+    ('wheel', '0.36.2', {
+        'checksums': ['e11eefd162658ea59a60a0f6c7d493a7190ea4b9a85e335b33489d9f17e0245e'],
     }),
     ('nose', '1.3.7', {
         'checksums': ['f1bffef9cbc82628f6e7d7b40d7e255aefaa1adb6a1b1d26c69a8b79e6208a98'],
@@ -69,8 +68,8 @@ exts_list = [
     ('paycheck', '1.0.2', {
         'checksums': ['6db7fc367c146cd59d2327ad4d2d6b0a24bc1be2d6953bb0773cbf702ee1ed34'],
     }),
-    ('pbr', '5.5.0', {
-        'checksums': ['14bfd98f51c78a3dd22a1ef45cf194ad79eee4a19e8e1a0d5c7f8e81ffe182ea'],
+    ('pbr', '5.5.1', {
+        'checksums': ['5fad80b613c402d5b7df7bd84812548b2a61e9977387a80a5fc5c396492b13c9'],
     }),
     ('Cython', '0.29.21', {
         'checksums': ['e57acb89bd55943c8d8bf813763d20b9099cc7165c0f16b707631a7654be9cad'],
@@ -78,11 +77,11 @@ exts_list = [
     ('six', '1.15.0', {
         'checksums': ['30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259'],
     }),
-    ('toml', '0.10.1', {
-        'checksums': ['926b612be1e5ce0634a2ca03470f95169cf16f939018233a670519cb4ac58b0f'],
+    ('toml', '0.10.2', {
+        'checksums': ['b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f'],
     }),
-    ('setuptools_scm', '4.1.2', {
-        'checksums': ['a8994582e716ec690f33fec70cca0f85bd23ec974e3f783233e4879090a7faa8'],
+    ('setuptools_scm', '5.0.1', {
+        'checksums': ['c85b6b46d0edd40d2301038cdea96bb6adc14d62ef943e75afb08b3e7bcf142a'],
     }),
     ('python-dateutil', '2.8.1', {
         'modulename': 'dateutil',
@@ -104,8 +103,8 @@ exts_list = [
             '06c3d3bb290305e1360a023ea03f9281116c230de62382e6be9474996086712e',
         ],
     }),
-    ('ecdsa', '0.16.0', {
-        'checksums': ['494c6a853e9ed2e9be33d160b41d47afc50a6629b993d2b9c5ad7bb226add892'],
+    ('ecdsa', '0.16.1', {
+        'checksums': ['cfc046a2ddd425adbd1a78b3c46f0d1325c657811c0f45ecc3a0a6236c1e50ff'],
     }),
     ('ipaddress', '1.0.23', {
         'checksums': ['b7f8e0369580bb4a24d5ba1d7cc29660a4a6987763faf1d8a8046830e020e7e2'],
@@ -113,17 +112,17 @@ exts_list = [
     ('asn1crypto', '1.4.0', {
         'checksums': ['f4f6e119474e58e04a2b1af817eb585b4fd72bdd89b998624712b5c99be7641c'],
     }),
-    ('idna', '2.10', {
-        'checksums': ['b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6'],
+    ('idna', '3.1', {
+        'checksums': ['c5b02147e01ea9920e6b0a3f1f7bb833612d507592c837a6c49552768f4054e1'],
     }),
     ('pycparser', '2.20', {
         'checksums': ['2d475327684562c3a96cc71adf7dc8c4f0565175cf86b6d7a404ff4c771f15f0'],
     }),
-    ('cffi', '1.14.3', {
-        'checksums': ['f92f789e4f9241cd262ad7a555ca2c648a98178a953af117ef7fad46aa1d5591'],
+    ('cffi', '1.14.5', {
+        'checksums': ['fd78e5fee591709f32ef6edb9a015b4aa1a5022598e36227500c8f4e02328d9c'],
     }),
-    ('cryptography', '3.1.1', {
-        'checksums': ['9d9fc6a16357965d282dd4ab6531013935425d0dc4950df2e0cf2a1b1ac1017d'],
+    ('cryptography', '3.4.6', {
+        'checksums': ['2d32223e5b0ee02943f32b19245b61a62db83a882f0e76cc564e1cec60d48f87'],
     }),
     ('pyasn1', '0.4.8', {
         'checksums': ['aef77c9fb94a3ac588e87841208bdec464471d9871bd5050a287cc9a475cd0ba'],
@@ -147,11 +146,11 @@ exts_list = [
     ('netaddr', '0.8.0', {
         'checksums': ['d6cc57c7a07b1d9d2e917aa8b36ae8ce61c35ba3fcd1b83ca31c5a0ee2b5a243'],
     }),
-    ('mock', '4.0.2', {
-        'checksums': ['dd33eb70232b6118298d516bbcecd26704689c386594f0f3c4f13867b2c56f72'],
+    ('mock', '4.0.3', {
+        'checksums': ['7d3fbbde18228f4ff2f1f119a45cdffa458b4c0dee32eb4d2bb2f82554bac7bc'],
     }),
-    ('pytz', '2020.1', {
-        'checksums': ['c35965d010ce31b23eeb663ed3cc8c906275d6be1a34393a1d73a41febf4a048'],
+    ('pytz', '2021.1', {
+        'checksums': ['83a4a90894bf38e243cf052c8b58f381bfe9a7a483f6a9cab140bc7f702ac4da'],
     }),
     ('bitstring', '3.1.7', {
         'checksums': ['fdf3eb72b229d2864fb507f8f42b1b2c57af7ce5fec035972f9566de440a864a'],
@@ -166,47 +165,47 @@ exts_list = [
     ('filelock', '3.0.12', {
         'checksums': ['18d82244ee114f543149c66a6e0c14e9c4f8a1044b5cdaadd0f82159d6a6ff59'],
     }),
-    ('importlib_metadata', '2.0.0', {
-        'checksums': ['77a540690e24b0305878c37ffd421785a6f7e53c8b5720d211b211de8d0e95da'],
+    ('importlib_metadata', '3.4.0', {
+        'checksums': ['fa5daa4477a7414ae34e95942e4dd07f62adf589143c875c133c1e53c4eff38d'],
     }),
-    ('virtualenv', '20.0.34', {
-        'checksums': ['4bf0e2bf99d33b123a895a5a244f0d7adb2a92171c6bbb31c3e2db235624abf1'],
+    ('virtualenv', '20.4.2', {
+        'checksums': ['147b43894e51dd6bba882cf9c282447f780e2251cd35172403745fc381a0a80d'],
     }),
     ('docopt', '0.6.2', {
         'checksums': ['49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491'],
     }),
-    ('joblib', '0.17.0', {
-        'checksums': ['9e284edd6be6b71883a63c9b7f124738a3c16195513ad940eae7e3438de885d5'],
+    ('joblib', '1.0.1', {
+        'checksums': ['9c17567692206d2f3fb9ecf5e991084254fe631665c450b443761c4186a613f7'],
     }),
-    ('chardet', '3.0.4', {
-        'checksums': ['84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae'],
+    ('chardet', '4.0.0', {
+        'checksums': ['0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa'],
     }),
-    ('certifi', '2020.6.20', {
-        'checksums': ['5930595817496dd21bb8dc35dad090f1c2cd0adfaf21204bf6732ca5d8ee34d3'],
+    ('certifi', '2020.12.5', {
+        'checksums': ['1a4995114262bffbc2413b159f2a1a480c969de6e6eb13ee966d470af86af59c'],
     }),
-    ('urllib3', '1.25.10', {
-        'checksums': ['91056c15fa70756691db97756772bb1eb9678fa585d9184f24534b100dc60f4a'],
+    ('urllib3', '1.26.3', {
+        'checksums': ['de3eedaad74a2683334e282005cd8d7f22f4d55fa690a2a1020a416cb0a47e73'],
     }),
-    ('requests', '2.24.0', {
-        'checksums': ['b3559a131db72c33ee969480840fff4bb6dd111de7dd27c8ee1f820f4f00231b'],
+    ('requests', '2.25.1', {
+        'checksums': ['27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804'],
     }),
-    ('xlrd', '1.2.0', {
-        'checksums': ['546eb36cee8db40c3eaa46c351e67ffee6eeb5fa2650b71bc4c758a29a1b29b2'],
+    ('xlrd', '1.2.6', {
+        'checksums': ['f84d245d40f4dc5b2e336a5086314e481efddcf92c93ee4636c426e1f188e173'],
     }),
-    ('py_expression_eval', '0.3.10', {
-        'checksums': ['43038326b686df697f9533895184c15d18769e215abbd8bcecaea607483f35b3'],
+    ('py_expression_eval', '0.3.11', {
+        'checksums': ['1c8d26c5b2344984a9d9c9460efa2995ee764a78347da079fc14bbbfd3c6cb6f'],
     }),
-    ('tabulate', '0.8.7', {
-        'checksums': ['db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007'],
+    ('tabulate', '0.8.8', {
+        'checksums': ['26f2589d80d332fefd2371d396863dedeb806f51b54bdb4b264579270b621e92'],
     }),
-    ('ujson', '4.0.1', {
-        'checksums': ['26cf6241b36ff5ce4539ae687b6b02673109c5e3efc96148806a7873eaa229d3'],
+    ('ujson', '4.0.2', {
+        'checksums': ['c615a9e9e378a7383b756b7e7a73c38b22aeb8967a8bfbffd4741f7ffd043c4d'],
     }),
     ('atomicwrites', '1.4.0', {
         'checksums': ['ae70396ad1a434f9c7046fd2dd196fc04b12f9e91ffb859164193be8b6168a7a'],
     }),
-    ('py', '1.9.0', {
-        'checksums': ['9ca6883ce56b4e8da7e79ac18787889fa5206c79dcc67fb065376cd2fe03f342'],
+    ('py', '1.10.0', {
+        'checksums': ['21b81bda15b66ef5e1a777a21c4dcd9c20ad3efd0b3f817e7a809035269e1bd3'],
     }),
     ('scandir', '1.10.0', {
         'checksums': ['4d4631f6062e658e9007ab3149a9b914f3548cb38bfb021c64f39a025ce578ae'],
@@ -214,43 +213,43 @@ exts_list = [
     ('pathlib2', '2.3.5', {
         'checksums': ['6cd9a47b597b37cc57de1c05e56fb1a1c9cc9fab04fe78c29acd090418529868'],
     }),
-    ('zipp', '3.3.0', {
-        'checksums': ['64ad89efee774d1897a58607895d80789c59778ea02185dd846ac38394a8642b'],
+    ('zipp', '3.4.0', {
+        'checksums': ['ed5eee1974372595f9e416cc7bbeeb12335201d8081ca8a0743c954d4446e5cb'],
     }),
     ('pluggy', '0.13.1', {
         'checksums': ['15b2acde666561e1298d71b523007ed7364de07029219b604cf808bfa1c765b0'],
     }),
-    ('more-itertools', '8.5.0', {
-        'checksums': ['6f83822ae94818eae2612063a5101a7311e68ae8002005b5e05f03fd74a86a20'],
+    ('more-itertools', '8.7.0', {
+        'checksums': ['c5d6da9ca3ff65220c3bfd2a8db06d698f05d4d2b9be57e1deb2be5a45019713'],
     }),
-    ('attrs', '20.2.0', {
+    ('attrs', '20.3.0', {
         'modulename': 'attr',
-        'checksums': ['26b54ddbbb9ee1d34d5d3668dd37d6cf74990ab23c828c2888dccdceee395594'],
+        'checksums': ['832aa3cde19744e49938b91fea06d69ecb9e649c93ba974535d08ad92164f700'],
     }),
     ('wcwidth', '0.2.5', {
         'checksums': ['c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83'],
     }),
-    ('iniconfig', '1.0.1', {
-        'checksums': ['e5f92f89355a67de0595932a6c6c02ab4afddc6fcdc0bfc5becd0d60884d3f69'],
+    ('iniconfig', '1.1.1', {
+        'checksums': ['bc3af051d7d14b2ee5ef9969666def0cd1a000e121eaea580d4a313df4b37f32'],
     }),
-    ('pytest', '6.1.1', {
-        'checksums': ['8f593023c1a0f916110285b6efd7f99db07d59546e3d8c36fc60e2ab05d3be92'],
+    ('pytest', '6.2.2', {
+        'checksums': ['9d1edf9e7d0b84d72ea3dbcdfd22b35fb543a5e8f2a60092dd578936bf63d7f9'],
     }),
     ('MarkupSafe', '1.1.1', {
         'checksums': ['29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b'],
     }),
-    ('Jinja2', '2.11.2', {
-        'checksums': ['89aab215427ef59c34ad58735269eb58b1a5808103067f7bb9d5836c651b3bb0'],
+    ('Jinja2', '2.11.3', {
+        'checksums': ['a6d58433de0ae800347cab1fa3043cebbabe8baa9d29e668f1c768cb87a333c6'],
     }),
-    ('packaging', '20.4', {
-        'checksums': ['4357f74f47b9c12db93624a82154e9b120fa8293699949152b22065d556079f8'],
+    ('packaging', '20.9', {
+        'checksums': ['5b327ac1320dc863dca72f4514ecc086f31186744b84a230374cc1fd776feae5'],
     }),
     ('sphinxcontrib-websupport', '1.2.4', {
         'modulename': 'sphinxcontrib.websupport',
         'checksums': ['4edf0223a0685a7c485ae5a156b6f529ba1ee481a1417817935b20bde1956232'],
     }),
-    ('Pygments', '2.7.1', {
-        'checksums': ['926c3f319eda178d1bd90851e4317e6d8cdb5e292a3386aac9bd75eca29cf9c7'],
+    ('Pygments', '2.8.0', {
+        'checksums': ['37a13ba168a02ac54cc5891a42b1caec333e59b66addb7fa633ea8a6d73445c0'],
     }),
     ('imagesize', '1.2.0', {
         'checksums': ['b1f6b5a4eab1f73479a50fb79fcf729514a900c341d8503d62a62dbc4127a2b1'],
@@ -258,11 +257,11 @@ exts_list = [
     ('docutils', '0.16', {
         'checksums': ['c2de3a60e9e7d07be26b7f2b00ca0309c207e06c100f9cc2a94931fc75a478fc'],
     }),
-    ('snowballstemmer', '2.0.0', {
-        'checksums': ['df3bac3df4c2c01363f3dd2cfa78cce2840a79b9f1c2d2de9ce8d31683992f52'],
+    ('snowballstemmer', '2.1.0', {
+        'checksums': ['e997baa4f2e9139951b6f4c631bad912dfd3c792467e2f03d7239464af90e914'],
     }),
-    ('Babel', '2.8.0', {
-        'checksums': ['1aac2ae2d0d8ea368fa90906567f5c08463d98ade155c0c4bfedd6a0f7160e38'],
+    ('Babel', '2.9.0', {
+        'checksums': ['da031ab54472314f210b0adcff1588ee5d1d1d0ba4dbd07b94dba82bde791e05'],
     }),
     ('alabaster', '0.7.12', {
         'checksums': ['a661d72d58e6ea8a57f7a86e37d86716863ee5e92788398526d58b26a4e4dc02'],
@@ -291,26 +290,26 @@ exts_list = [
         'modulename': 'sphinxcontrib.serializinghtml',
         'checksums': ['eaa0eccc86e982a9b939b2b82d12cc5d013385ba5eadcc7e4fed23f4405f77bc'],
     }),
-    ('Sphinx', '3.2.1', {
-        'checksums': ['321d6d9b16fa381a5306e5a0b76cd48ffbc588e6340059a729c6fdd66087e0e8'],
+    ('Sphinx', '3.5.1', {
+        'checksums': ['11d521e787d9372c289472513d807277caafb1684b33eb4f08f7574c405893a9'],
     }),
     ('sphinx-bootstrap-theme', '0.7.1', {
         'checksums': ['571e43ccb76d4c6c06576aa24a826b6ebc7adac45a5b54985200128806279d08'],
     }),
-    ('colorama', '0.4.3', {
-        'checksums': ['e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1'],
+    ('colorama', '0.4.4', {
+        'checksums': ['5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b'],
     }),
     ('click', '7.1.2', {
         'checksums': ['d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a'],
     }),
-    ('psutil', '5.7.2', {
-        'checksums': ['90990af1c3c67195c44c9a889184f84f5b2320dce3ee3acbd054e3ba0b4a7beb'],
+    ('psutil', '5.8.0', {
+        'checksums': ['0c9ccb99ab76025f2f0bbecf341d4656e9c1351db8cc8a03ccd62e318ab4b5c6'],
     }),
     ('future', '0.18.2', {
         'checksums': ['b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d'],
     }),
-    ('sortedcontainers', '2.2.2', {
-        'checksums': ['4e73a757831fc3ca4de2859c422564239a31d8213d09a2a666e375807034d2ba'],
+    ('sortedcontainers', '2.3.0', {
+        'checksums': ['59cc937650cf60d677c16775597c89a960658a09cf7c1a668f86e1e4464b10a1'],
     }),
     ('intervaltree', '3.1.0', {
         'checksums': ['902b1b88936918f9b2a19e0e5eb7ccb430ae45cde4f39ea4b36932920d33952d'],
@@ -325,8 +324,8 @@ exts_list = [
     ('flit', '3.0.0', {
         'checksums': ['b4fe0f84a1ffbf125d003e253ec98c0b6e3e31290b31fba3ad22d28588c20893'],
     }),
-    ('regex', '2020.10.11', {
-        'checksums': ['463e770c48da76a8da82b8d4a48a541f314e0df91cbb6d873a341dbe578efafd'],
+    ('regex', '2020.11.13', {
+        'checksums': ['83d6b356e116ca119db8e7c6fc2983289d87b27b3fac238cfe5dca529d884562'],
     }),
     ('intreehooks', '1.0', {
         'checksums': ['87e600d3b16b97ed219c078681260639e77ef5a17c0e0dbdd5a302f99b4e34e1'],
@@ -346,27 +345,27 @@ exts_list = [
         'use_pip': False,
         'checksums': ['442ee5db9a14120635c5990bcdbfe7c03ada5898291f0c802f77be71569ded59'],
     }),
-    ('jeepney', '0.4.3', {
+    ('jeepney', '0.6.0', {
         'use_pip': False,
-        'checksums': ['3479b861cc2b6407de5188695fa1a8d57e5072d7059322469b62628869b8e36e'],
+        'checksums': ['7d59b6622675ca9e993a6bd38de845051d315f8b0c72cca3aef733a20b648657'],
     }),
-    ('SecretStorage', '3.1.2', {
-        'checksums': ['15da8a989b65498e29be338b3b279965f1b8f09b9668bd8010da183024c8bff6'],
+    ('SecretStorage', '3.3.1', {
+        'checksums': ['fd666c51a6bf200643495a04abb261f83229dcb6fd8472ec393df7ffc8b6f195'],
     }),
-    ('keyring', '21.4.0', {
+    ('keyring', '22.0.1', {
         'modulename': False,  # Doesn't work properly if HOME directory contains keys
-        'checksums': ['9aeadd006a852b78f4b4ef7c7556c2774d2432bbef8ee538a3e9089ac8b11466'],
+        'checksums': ['9acb3e1452edbb7544822b12fd25459078769e560fa51f418b6d00afaa6178df'],
     }),
-    ('keyrings.alt', '4.0.0', {
+    ('keyrings.alt', '4.0.2', {
         'modulename': False,  # Doesn't work properly if HOME directory contains keys
-        'checksums': ['f70ef01a8f2b968b83643db370a1e85bc0e4bc8b358f9661504279afb019d21d'],
+        'checksums': ['cc475635099d6edd7e475c5a479e5b4da5e811a3af04495a1e9ada488d16fe25'],
     }),
     ('tomlkit', '0.7.0', {
         'use_pip': False,
         'checksums': ['ac57f29693fab3e309ea789252fcce3061e19110085aa31af5446ca749325618'],
     }),
-    ('shellingham', '1.3.2', {
-        'checksums': ['576c1982bea0ba82fb46c36feb951319d7f42214a82634233f58b40d858a751e'],
+    ('shellingham', '1.4.0', {
+        'checksums': ['4855c2458d6904829bd34c299f11fdeed7cfefbf8a2c522e4caea6cd76b3171e'],
     }),
     ('requests-toolbelt', '0.9.1', {
         'checksums': ['968089d4584ad4ad7c171454f0a5c6dac23971e9472521ea3b6d49d610aa6fc0'],
@@ -374,8 +373,8 @@ exts_list = [
     ('pyrsistent', '0.17.3', {
         'checksums': ['2e636185d9eb976a18a8a8e96efce62f2905fea90041958d8cc2a189756ebf3e'],
     }),
-    ('pkginfo', '1.5.0.1', {
-        'checksums': ['7424f2c8511c186cd5424bbf31045b77435b37a8d604990b79d4e70d741148bb'],
+    ('pkginfo', '1.7.0', {
+        'checksums': ['029a70cb45c6171c329dfc890cde0879f8c52d6f3922794796e06f577bb03db4'],
     }),
     ('pexpect', '4.8.0', {
         'checksums': ['fc65a43959d153d0114afe13997d439c22823a27cefceb5ff35c2178c6784c0c'],
@@ -399,28 +398,28 @@ exts_list = [
     ('cachy', '0.3.0', {
         'checksums': ['186581f4ceb42a0bbe040c407da73c14092379b1e4c0e327fdb72ae4a9b269b1'],
     }),
-    ('msgpack', '1.0.0', {
-        'checksums': ['9534d5cc480d4aff720233411a1f765be90885750b07df772380b34c10ecb5c0'],
+    ('msgpack', '1.0.2', {
+        'checksums': ['fae04496f5bc150eefad4e9571d1a76c55d021325dcd484ce45065ebbdd00984'],
     }),
     ('CacheControl', '0.12.6', {
         'checksums': ['be9aa45477a134aee56c8fac518627e1154df063e85f67d4f83ce0ccc23688e8'],
     }),
-    ('ptyprocess', '0.6.0', {
+    ('ptyprocess', '0.7.0', {
         'use_pip': False,
-        'checksums': ['923f299cc5ad920c68f2bc0bc98b75b9f838b93b599941a6b63ddbc2476394c0'],
+        'checksums': ['5c5d0a3b48ceee0b48485e0c26037c0acd7d29765ca3fbb5cb3831d347423220'],
     }),
     ('lockfile', '0.12.2', {
         'checksums': ['6aed02de03cba24efabcd600b30540140634fc06cfa603822d508d5361e9f799'],
     }),
-    ('poetry-core', '1.0.0', {
+    ('poetry-core', '1.0.2', {
         'modulename': 'poetry.core',
-        'checksums': ['6a664ff389b9f45382536f8fa1611a0cb4d2de7c5a5c885db1f0c600cd11fbd5'],
+        'checksums': ['ff505d656a6cf40ffbf84393d8b5bf37b78523a15def3ac473b6fad74261ee71'],
     }),
-    ('poetry', '1.1.3', {
-        'checksums': ['49eae89e2c44b0323214d0bbcefc21ebe3a19baa44db98eefabd4db9e82c7253'],
+    ('poetry', '1.1.4', {
+        'checksums': ['946a5a1173be607c7c5c593358a0fb0c0d6af4400c978929ecdb19c3a37b53a8'],
     }),
-    ('fsspec', '0.8.4', {
-        'checksums': ['e1e494d4814f6804769f3c7bfd7a722a15113cc0339d14755297f09306b8f21f'],
+    ('fsspec', '0.8.5', {
+        'checksums': ['890c6ce9325030f03bd2eae81389ddcbcee53bdd475334ca064595e1e45f92a6'],
     }),
     ('threadpoolctl', '2.1.0', {
         'checksums': ['ddc57c96a38beb63db45d6c159b5ab07b6bced12c45a1f07b2b92f272aebfa6b'],
