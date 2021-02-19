@@ -10,7 +10,7 @@ toolchainopts = {'pic': True}
 
 source_urls = ['https://www.python.org/ftp/%(namelower)s/%(version)s/']
 sources = [SOURCE_TGZ]
-checksums = ['313562ee9986dc369cd678011bdfd9800ef62fbf7b1496228a18f86b36428c21']
+checksums = ['429ae95d24227f8fa1560684fad6fca7']
 
 builddependencies = [
     ('UnZip', '6.0'),
