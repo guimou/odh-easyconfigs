@@ -112,8 +112,8 @@ exts_list = [
     ('asn1crypto', '1.4.0', {
         'checksums': ['f4f6e119474e58e04a2b1af817eb585b4fd72bdd89b998624712b5c99be7641c'],
     }),
-    ('idna', '3.1', {
-        'checksums': ['c5b02147e01ea9920e6b0a3f1f7bb833612d507592c837a6c49552768f4054e1'],
+    ('idna', '2.10', {
+        'checksums': ['b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6'],
     }),
     ('pycparser', '2.20', {
         'checksums': ['2d475327684562c3a96cc71adf7dc8c4f0565175cf86b6d7a404ff4c771f15f0'],
@@ -177,8 +177,8 @@ exts_list = [
     ('joblib', '1.0.1', {
         'checksums': ['9c17567692206d2f3fb9ecf5e991084254fe631665c450b443761c4186a613f7'],
     }),
-    ('chardet', '4.0.0', {
-        'checksums': ['0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa'],
+    ('chardet', '3.0.4', {
+        'checksums': ['84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae'],
     }),
     ('certifi', '2020.12.5', {
         'checksums': ['1a4995114262bffbc2413b159f2a1a480c969de6e6eb13ee966d470af86af59c'],
@@ -254,8 +254,8 @@ exts_list = [
     ('imagesize', '1.2.0', {
         'checksums': ['b1f6b5a4eab1f73479a50fb79fcf729514a900c341d8503d62a62dbc4127a2b1'],
     }),
-    ('docutils', '0.16', {
-        'checksums': ['c2de3a60e9e7d07be26b7f2b00ca0309c207e06c100f9cc2a94931fc75a478fc'],
+    ('docutils', '0.15.2', {
+        'checksums': ['a2aeea129088da402665e92e0b25b04b073c04b2dce4ab65caaa38b7ce2e1a99'],
     }),
     ('snowballstemmer', '2.1.0', {
         'checksums': ['e997baa4f2e9139951b6f4c631bad912dfd3c792467e2f03d7239464af90e914'],
@@ -296,8 +296,8 @@ exts_list = [
     ('sphinx-bootstrap-theme', '0.7.1', {
         'checksums': ['571e43ccb76d4c6c06576aa24a826b6ebc7adac45a5b54985200128806279d08'],
     }),
-    ('colorama', '0.4.4', {
-        'checksums': ['5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b'],
+    ('colorama', '0.4.3', {
+        'checksums': ['e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1'],
     }),
     ('click', '7.1.2', {
         'checksums': ['d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a'],
@@ -352,9 +352,9 @@ exts_list = [
     ('SecretStorage', '3.3.1', {
         'checksums': ['fd666c51a6bf200643495a04abb261f83229dcb6fd8472ec393df7ffc8b6f195'],
     }),
-    ('keyring', '22.0.1', {
+    ('keyring', '21.8.0', {
         'modulename': False,  # Doesn't work properly if HOME directory contains keys
-        'checksums': ['9acb3e1452edbb7544822b12fd25459078769e560fa51f418b6d00afaa6178df'],
+        'checksums': ['1746d3ac913d449a090caf11e9e4af00e26c3f7f7e81027872192b2398b98675'],
     }),
     ('keyrings.alt', '4.0.2', {
         'modulename': False,  # Doesn't work properly if HOME directory contains keys
