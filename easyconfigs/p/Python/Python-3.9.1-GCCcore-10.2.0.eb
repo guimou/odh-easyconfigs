@@ -121,8 +121,8 @@ exts_list = [
     ('cffi', '1.14.5', {
         'checksums': ['fd78e5fee591709f32ef6edb9a015b4aa1a5022598e36227500c8f4e02328d9c'],
     }),
-    ('cryptography', '3.4.6', {
-        'checksums': ['2d32223e5b0ee02943f32b19245b61a62db83a882f0e76cc564e1cec60d48f87'],
+    ('cryptography', '3.3.2', {
+        'checksums': ['5a60d3780149e13b7a6ff7ad6526b38846354d11a15e21068e57073e29e19bed'],
     }),
     ('pyasn1', '0.4.8', {
         'checksums': ['aef77c9fb94a3ac588e87841208bdec464471d9871bd5050a287cc9a475cd0ba'],
