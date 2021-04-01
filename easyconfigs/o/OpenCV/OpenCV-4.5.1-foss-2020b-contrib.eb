@@ -53,12 +53,16 @@ dependencies = [
 ]
 
 configopts = '-DOPENCV_EXTRA_MODULES_PATH=%(builddir)s/%(namelower)s_contrib-%(version)s/modules '
-configopts += '-DFREETYPE_FOUND=1 '
-configopts += '-DFREETYPE_LIBRARIES=libfreetype.so '
-configopts += '-DFREETYPE_INCLUDE_DIRS=/opt/apps/easybuild/software/freetype/2.10.4-GCCcore-10.2.0/lib64 '
-configopts += '-DHARFBUZZ_FOUND=1 '
-configopts += '-DHARFBUZZ_LIBRARIES=libharfbuzz.so '
-configopts += '-DHARFBUZZ_INCLUDE_DIRS=/opt/apps/easybuild/software/HarfBuzz/2.6.7-GCCcore-10.2.0/lib64 '
+configopts += '-DFREETYPE_FOUND=ON '
+configopts += '-DFREETYPE_INCLUDE_DIRS=/opt/apps/easybuild/software/freetype/2.10.4-GCCcore-10.2.0/include/freetype2/ '
+configopts += '-DFREETYPE_LIBRARIES=/opt/apps/easybuild/software/freetype/2.10.4-GCCcore-10.2.0/lib64/libfreetype.so '
+configopts += '-DFREETYPE_LINK_LIBRARIES=/opt/apps/easybuild/software/freetype/2.10.4-GCCcore-10.2.0/lib64/libfreetype.so '
+configopts += '-DFREETYPE_LINK_LIBRARIES_XXXXX=ON '
+configopts += '-DHARFBUZZ_FOUND=ON '
+configopts += '-DHARFBUZZ_INCLUDE_DIRS=/opt/apps/easybuild/software/HarfBuzz/2.6.7-GCCcore-10.2.0/include '
+configopts += '-DHARFBUZZ_LIBRARIES=/opt/apps/easybuild/software/HarfBuzz/2.6.7-GCCcore-10.2.0/lib64/libharfbuzz.so '
+configopts += '-DHARFBUZZ_LINK_LIBRARIES=/opt/apps/easybuild/software/HarfBuzz/2.6.7-GCCcore-10.2.0/lib64/libharfbuzz.so '
+configopts += '-DHARFBUZZ_LINK_LIBRARIES_XXXXX=ON '
 
 enhance_sanity_check = True
 
