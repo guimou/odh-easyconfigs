@@ -63,6 +63,9 @@ configopts += '-DHARFBUZZ_INCLUDE_DIRS=/opt/apps/easybuild/software/HarfBuzz/2.6
 configopts += '-DHARFBUZZ_LIBRARIES=/opt/apps/easybuild/software/HarfBuzz/2.6.7-GCCcore-10.2.0/lib64/libharfbuzz.so '
 configopts += '-DHARFBUZZ_LINK_LIBRARIES=/opt/apps/easybuild/software/HarfBuzz/2.6.7-GCCcore-10.2.0/lib64/libharfbuzz.so '
 configopts += '-DHARFBUZZ_LINK_LIBRARIES_XXXXX=ON '
+configopts += '-DBUILD_opencv_python2=OFF '
+
+buildopts = 'VERBOSE=1 '
 
 enhance_sanity_check = True
 
