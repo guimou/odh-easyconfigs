@@ -30,8 +30,6 @@ checksums = [
 
 builddependencies = [
     ('CMake', '3.18.4'),
-    ('freetype', '2.10.4'),
-    ('HarfBuzz', '2.6.7'),
 ]
 
 dependencies = [
