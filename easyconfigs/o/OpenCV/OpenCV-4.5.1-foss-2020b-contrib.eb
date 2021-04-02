@@ -59,7 +59,7 @@ configopts += '-DFREETYPE_LIBRARIES=/opt/apps/easybuild/software/freetype/2.10.4
 configopts += '-DFREETYPE_LINK_LIBRARIES=/opt/apps/easybuild/software/freetype/2.10.4-GCCcore-10.2.0/lib64/libfreetype.so '
 configopts += '-DFREETYPE_LINK_LIBRARIES_XXXXX=ON '
 configopts += '-DHARFBUZZ_FOUND=ON '
-configopts += '-DHARFBUZZ_INCLUDE_DIRS=/opt/apps/easybuild/software/HarfBuzz/2.6.7-GCCcore-10.2.0/include '
+configopts += '-DHARFBUZZ_INCLUDE_DIRS=/opt/apps/easybuild/software/HarfBuzz/2.6.7-GCCcore-10.2.0/include/harfbuzz '
 configopts += '-DHARFBUZZ_LIBRARIES=/opt/apps/easybuild/software/HarfBuzz/2.6.7-GCCcore-10.2.0/lib64/libharfbuzz.so '
 configopts += '-DHARFBUZZ_LINK_LIBRARIES=/opt/apps/easybuild/software/HarfBuzz/2.6.7-GCCcore-10.2.0/lib64/libharfbuzz.so '
 configopts += '-DHARFBUZZ_LINK_LIBRARIES_XXXXX=ON '
