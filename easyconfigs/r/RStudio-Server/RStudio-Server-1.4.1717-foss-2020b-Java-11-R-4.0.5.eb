@@ -33,7 +33,7 @@ builddependencies = [
 ]
 
 dependencies = [
-    ('Boost', '1.72.0'),
+    ('Boost', '1.74.0'),
     ('R', '4.0.5'),
     ('Java', '11', '', True),
 ]
