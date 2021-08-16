@@ -1,0 +1,16 @@
+Author: @guimou
+Date:   August 16 2021
+
+Without this patch, RStudio does not inherits environment variables set before launching it. Since R is provided by a separate module, it means RStudio has no idea where R is nor any other library or executables that were loaded before launching RStudio.
+
+diff -Nru rstudio-1.4.1717.orig/src/cpp/core/system/PosixSystem.cpp rstudio-1.4.1717/src/cpp/core/system/PosixSystem.cpp
+--- rstudio-1.4.1717.orig/src/cpp/core/system/PosixSystem.cpp	2021-08-16 10:33:48.701652416 -0400
++++ rstudio-1.4.1717/src/cpp/core/system/PosixSystem.cpp	2021-08-16 10:34:39.165317500 -0400
+@@ -2184,6 +2184,7 @@
+ 
+    // setup environment
+    core::system::Options env;
++   core::system::environment(&env);
+    copyEnvironmentVar("PATH", &env);
+    copyEnvironmentVar("MANPATH", &env);
+    copyEnvironmentVar("LANG", &env);

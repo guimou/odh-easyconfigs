@@ -1,0 +1,74 @@
+easyblock = 'CMakeMake'
+
+name = 'RStudio-Server'
+version = '1.4.1717'
+versionsuffix = '-Java-%(javaver)s-R-%(rver)s'
+
+homepage = 'https://www.rstudio.com/'
+description = """This is the RStudio Server version.
+RStudio is a set of integrated tools designed to help you be more productive with R.
+
+The server can be started with:
+  rserver --server-daemonize=0 --www-port 8787 --rsession-which-r=$(which R)
+"""
+
+toolchain = {'name': 'foss', 'version': '2020b'}
+
+source_urls = ['https://github.com/rstudio/rstudio/archive']
+sources = ['v%(version)s.tar.gz']
+patches = [
+    'RStudio-Server-1.4.1717_fix-use-of-var.patch',
+    'RStudio-Server-1.4.1717-fix_env.patch',
+]
+checksums = [
+    '3af234180fd7cef451aef40faac2c7b52860f14a322244c1c7aede029814d261',  # v1.4.1717.tar.gz
+    '1e8beb033036665a4b4f84aaa17817bac144d3b20fbd14a5cc98eb5dce5e48dd',  # RStudio-Server-1.4.1717_fix-use-of-var.patch
+    '945104714387b883af12727adc56281ffa6684b7c7745d630907019148930bf1',  # RStudio-Server-1.4.1717-fix_env.patch
+]
+
+builddependencies = [
+    ('pkg-config', '0.29.2'),
+    ('CMake', '3.18.4'),
+    ('ant', '1.10.8', '-Java-%(javaver)s', True),
+]
+
+dependencies = [
+    ('Boost', '1.72.0'),
+    ('R', '4.0.5'),
+    ('Java', '11', '', True),
+]
+
+osdependencies = [
+    ('pam-devel', 'libpam0g-dev')
+]
+
+start_dir = "%(builddir)s/rstudio-%(version)s"
+separate_build_dir = False
+build_type = "Release"
+
+preconfigopts = " && ".join([
+    "cd %(builddir)s/rstudio-%(version)s/dependencies/common",
+    "./install-cef",
+    "./install-dictionaries",
+    "./install-mathjax",
+    "./install-pandoc",
+    "./install-packages",
+    "cd ../..",
+    "",  # To append &&
+])
+
+configopts = "-DRSTUDIO_TARGET=Server -DRSTUDIO_BOOST_SIGNALS_VERSION=2"
+
+sanity_check_paths = {
+    'files': ["bin/rstudio-server", "bin/rsession", "bin/rserver", "bin/rserver-pam", "bin/rpostback"],
+    'dirs': ['bin', 'extras', 'resources', 'www', 'www-symbolmaps', 'R'],
+}
+
+sanity_check_commands = [
+    # This command requires environment variables R_HOME and R_DOC_DIR
+    "R_HOME=$EBROOTR/lib64/R R_DOC_DIR=$R_HOME/doc rsession --verify-installation=1",
+    "rserver --verify-installation=1",
+    "rstudio-server verify-installation",
+]
+
+moduleclass = 'lang'

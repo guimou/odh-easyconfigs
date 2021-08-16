@@ -1,5 +1,5 @@
 name = 'code-server'
-version = '3.9.1'
+version = '3.11.1'
 
 homepage = 'https://github.com/cdr/code-server'
 description = """Run VS Code on any machine anywhere and access it in the browser."""
