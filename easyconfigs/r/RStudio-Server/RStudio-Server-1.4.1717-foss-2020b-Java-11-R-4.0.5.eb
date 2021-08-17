@@ -49,7 +49,6 @@ build_type = "Release"
 preconfigopts = " && ".join([
     "cd %(builddir)s/rstudio-%(version)s/dependencies/common",
     "./install-cef",
-    "./install-boost",
     "./install-dictionaries",
     "./install-mathjax",
     "./install-pandoc",
@@ -61,7 +60,7 @@ preconfigopts = " && ".join([
     "",  # To append &&
 ])
 
-configopts = "-DRSTUDIO_TARGET=Server -DRSTUDIO_BOOST_SIGNALS_VERSION=2"
+configopts = "-DRSTUDIO_TARGET=Server -DRSTUDIO_BOOST_SIGNALS_VERSION=2 -DRSTUDIO_BOOST_REQUESTED_VERSION=1.74.0"
 
 sanity_check_paths = {
     'files': ["bin/rstudio-server", "bin/rsession", "bin/rserver", "bin/rserver-pam", "bin/rpostback"],
