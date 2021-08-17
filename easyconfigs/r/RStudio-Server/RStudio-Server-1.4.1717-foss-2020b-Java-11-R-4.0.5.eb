@@ -53,7 +53,7 @@ preconfigopts = " && ".join([
     "./install-mathjax",
     "./install-pandoc",
     "./install-packages",
-    ./install-sentry-cli
+    "./install-sentry-cli",
     "./install-npm-dependencies",
     "./install-soci",
     "./install-yaml-cpp",
@@ -62,7 +62,7 @@ preconfigopts = " && ".join([
 ])
 
 configopts = "-DRSTUDIO_TARGET=Server -DRSTUDIO_BOOST_SIGNALS_VERSION=2"
-configopts += "-DRSTUDIO_TOOLS_ROOT=/opt/apps/easybuild//opt/apps/easybuild/software/RStudio-Server/1.4.1717-foss-2020b-Java-11-R-4.0.5/rstudiotools"
+configopts += " -DRSTUDIO_TOOLS_ROOT=/opt/apps/easybuild/software/RStudio-Server/1.4.1717-foss-2020b-Java-11-R-4.0.5/rstudiotools"
 
 sanity_check_paths = {
     'files': ["bin/rstudio-server", "bin/rsession", "bin/rserver", "bin/rserver-pam", "bin/rpostback"],
