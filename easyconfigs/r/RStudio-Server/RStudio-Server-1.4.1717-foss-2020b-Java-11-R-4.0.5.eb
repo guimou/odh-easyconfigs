@@ -48,11 +48,16 @@ build_type = "Release"
 
 preconfigopts = " && ".join([
     "cd %(builddir)s/rstudio-%(version)s/dependencies/common",
-    "./install-cef",
     "./install-dictionaries",
     "./install-mathjax",
+    "./install-boost",
     "./install-pandoc",
     "./install-packages",
+    "./install-sentry-cli",
+    "./install-npm-dependencies",
+    "./install-soci",
+    "./install-yaml-cpp",
+    "./install-crashpad",
     "cd ../..",
     "",  # To append &&
 ])
