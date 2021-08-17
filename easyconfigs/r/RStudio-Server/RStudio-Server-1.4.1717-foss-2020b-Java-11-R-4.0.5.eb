@@ -33,7 +33,6 @@ builddependencies = [
 ]
 
 dependencies = [
-    ('Boost', '1.74.0'),
     ('R', '4.0.5'),
     ('Java', '11', '', True),
 ]
@@ -48,11 +47,13 @@ build_type = "Release"
 
 preconfigopts = " && ".join([
     "cd %(builddir)s/rstudio-%(version)s/dependencies/common",
+    "./install-boost",
     "./install-cef",
     "./install-dictionaries",
     "./install-mathjax",
     "./install-pandoc",
     "./install-packages",
+    ./install-sentry-cli
     "./install-npm-dependencies",
     "./install-soci",
     "./install-yaml-cpp",
@@ -60,7 +61,8 @@ preconfigopts = " && ".join([
     "",  # To append &&
 ])
 
-configopts = "-DRSTUDIO_TARGET=Server -DRSTUDIO_BOOST_SIGNALS_VERSION=2 -DRSTUDIO_BOOST_REQUESTED_VERSION=1.74.0"
+configopts = "-DRSTUDIO_TARGET=Server -DRSTUDIO_BOOST_SIGNALS_VERSION=2"
+configopts += "-DRSTUDIO_TOOLS_ROOT=/opt/apps/easybuild//opt/apps/easybuild/software/RStudio-Server/1.4.1717-foss-2020b-Java-11-R-4.0.5/rstudiotools"
 
 sanity_check_paths = {
     'files': ["bin/rstudio-server", "bin/rsession", "bin/rserver", "bin/rserver-pam", "bin/rpostback"],
