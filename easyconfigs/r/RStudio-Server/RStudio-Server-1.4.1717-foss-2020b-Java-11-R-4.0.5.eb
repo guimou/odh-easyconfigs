@@ -46,7 +46,6 @@ separate_build_dir = False
 build_type = "Release"
 
 preconfigopts = " && ".join([
-    "RSTUDIO_TOOLS_ROOT=/opt/apps/easybuild/software/RStudio-Server/1.4.1717-foss-2020b-Java-11-R-4.0.5/rstudiotools",
     "cd %(builddir)s/rstudio-%(version)s/dependencies/common",
     "./install-boost",
     "./install-cef",
@@ -63,7 +62,6 @@ preconfigopts = " && ".join([
 ])
 
 configopts = "-DRSTUDIO_TARGET=Server -DRSTUDIO_BOOST_SIGNALS_VERSION=2"
-configopts += " -DRSTUDIO_TOOLS_ROOT=/opt/apps/easybuild/software/RStudio-Server/1.4.1717-foss-2020b-Java-11-R-4.0.5/rstudiotools"
 
 sanity_check_paths = {
     'files': ["bin/rstudio-server", "bin/rsession", "bin/rserver", "bin/rserver-pam", "bin/rpostback"],
