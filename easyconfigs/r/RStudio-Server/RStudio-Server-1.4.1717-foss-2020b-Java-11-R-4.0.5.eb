@@ -57,7 +57,6 @@ preconfigopts = " && ".join([
     "./install-npm-dependencies",
     "./install-soci",
     "./install-yaml-cpp",
-    "./install-crashpad",
     "cd ../..",
     "",  # To append &&
 ])
