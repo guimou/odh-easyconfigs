@@ -29,7 +29,6 @@ builddependencies = [
 ]
 
 dependencies = [
-    ('Boost', '1.74.0'),
     ('R', '4.0.5'),
     ('Java', '11', '', True),
 ]
@@ -41,7 +40,7 @@ osdependencies = [
 build_type = "Release"
 local_dep_dir = "%(builddir)s/rstudio-%(version)s/dependencies/common"
 preconfigopts = ("(cd %s && ./install-dictionaries && "
-                 "./install-pandoc && ./install-mathjax) && ") % local_dep_dir
+                 "./install-pandoc && ./install-mathjax && ./install-boost) && ") % local_dep_dir
 configopts = "-DRSTUDIO_TARGET=Server -DRSTUDIO_BOOST_SIGNALS_VERSION=2"
 
 sanity_check_paths = {
