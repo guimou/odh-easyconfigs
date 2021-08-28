@@ -28,8 +28,8 @@ checksums = [
 
 builddependencies = [
     ('pkg-config', '0.29.2'),
-    ('CMake', '3.16.4'),
-    ('ant', '1.10.8', '-Java-%(javaver)s', True),
+    ('CMake', '3.18.4'),
+    ('ant', '1.10.9', '-Java-%(javaver)s', True),
 ]
 
 dependencies = [
