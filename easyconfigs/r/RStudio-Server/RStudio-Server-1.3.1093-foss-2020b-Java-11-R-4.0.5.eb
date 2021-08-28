@@ -47,7 +47,7 @@ build_type = "Release"
 
 preconfigopts = " && ".join([
     "cd %(builddir)s/rstudio-%(version)s/dependencies/common",
-    "./install-boost"
+    "./install-boost",
     "./install-cef",
     "./install-dictionaries",
     "./install-mathjax",
