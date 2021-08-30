@@ -52,6 +52,8 @@ dependencies = [
     ('HDF5', '1.10.7'),  # needed by hdf from contrib
 ]
 
+# XXXX in configurations is a bug fix in OpenCV because ocv_check_modules is not able to recognize freetype and harfbuzz
+# ref: https://github.com/opencv/opencv/blob/6e8daaec0f46aaba9ea22e2afce47307b1dbff9f/cmake/OpenCVUtils.cmake#L861
 configopts = '-DOPENCV_EXTRA_MODULES_PATH=%(builddir)s/%(namelower)s_contrib-%(version)s/modules '
 configopts += '-DFREETYPE_FOUND=ON '
 configopts += '-DFREETYPE_INCLUDE_DIRS=$EBROOTFREETYPE/include/freetype2/ '

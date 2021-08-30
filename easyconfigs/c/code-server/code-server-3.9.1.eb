@@ -11,7 +11,7 @@ sources = ['code-server-%(version)s-linux-%(mapped_arch)s.tar.gz']
 checksums = [
     {
         'code-server-%(version)s-linux-amd64.tar.gz':
-            'f2648a4387c5a5be8666fb82a7b8a58274c45b91942251ab337e202e078ae8a5',
+            'd34b0b79582196d59d44ac971aabb7f15cb05d837318b94f62470dc8475665e9',
     }
 ]
 
