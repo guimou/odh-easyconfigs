@@ -14,7 +14,7 @@ description = """GTK+ is the primary library used to construct user interfaces i
 toolchain = {'name': 'GCCcore', 'version': '10.3.0'}
 
 builddependencies = [
-    ('binutils', '2.36'),
+    ('binutils', '2.36.1'),
     ('Autotools', '20210128'),
     ('GObject-Introspection', '1.68.0'),
     ('gettext', '0.21'),
