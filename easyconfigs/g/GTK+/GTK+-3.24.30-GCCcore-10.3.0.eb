@@ -25,7 +25,7 @@ builddependencies = [
 
 dependencies = [
     ('ATK', '2.36.0'),
-    ('at-spi2-atk', '2.40.2'),
+    ('at-spi2-atk', '2.38.0'),
     ('Gdk-Pixbuf', '2.42.6'),
     ('Pango', '1.48.5'),
     ('libepoxy', '1.5.8'),
