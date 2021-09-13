@@ -2,20 +2,20 @@ easyblock = 'Bundle'
 
 name = 'IRkernel'
 version = '1.2'
-versionsuffix = '-R-%(rver)s-Python-%(pyver)s'
+versionsuffix = '-R-%(rver)s'
 
 homepage = 'https://irkernel.github.io'
 description = """The R kernel for the 'Jupyter' environment executes R code 
  which the front-end (Jupyter Notebook or other front-ends) submits to the 
  kernel via the network."""
 
-toolchain = {'name': 'foss', 'version': '2020b'}
+toolchain = {'name': 'foss', 'version': '2021a'}
 
 dependencies = [
     ('R', '4.0.5'),
-    ('Python', '3.8.6'),
-    ('IPython', '7.18.1'),
-    ('ZeroMQ', '4.3.3'),
+    ('Python', '3.9.5'),
+    ('IPython', '7.25.0'),
+    ('ZeroMQ', '4.3.4'),
 ]
 
 exts_defaultclass = 'RPackage'
