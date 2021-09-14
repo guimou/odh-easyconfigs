@@ -1,22 +1,28 @@
-# Author: Denis Krišťák (INUITS)
+# Author: Guillaume Moutier (Red Hat)
 
 easyblock = 'Tarball'
 
 name = 'Spark'
-version = '3.1.1'
+version = '3.1.2'
 versionsuffix = '-Python-%(pyver)s'
 
 homepage = 'https://spark.apache.org'
-description = """Spark is Hadoop MapReduce done in memory"""
+description = """Apache Spark is a unified analytics engine for large-scale data processing.
+ It provides high-level APIs in Java, Scala, Python and R, and an optimized engine that supports general execution graphs.
+ It also supports a rich set of higher-level tools including Spark SQL for SQL and structured data processing, MLlib for machine learning,
+ GraphX for graph processing, and Structured Streaming for incremental computation and stream processing."""
 
 toolchain = {'name': 'foss', 'version': '2021a'}
 
 source_urls = [
-    'https://archive.apache.org/dist//%(namelower)s/%(namelower)s-%(version)s/',
+    'https://dist.apache.org/repos/dist/release/%(namelower)s/%(namelower)s-%(version)s/',
+    'https://archive.apache.org/dist/%(namelower)s/%(namelower)s-%(version)s/',
     'https://downloads.apache.org/%(namelower)s/%(namelower)s-%(version)s/'
 ]
 sources = ['%(namelower)s-%(version)s-bin-hadoop3.2.tgz']
-checksums = ['4e0846207bf10311de43451bc99309086fce7990aaf54bf3038608b1981afbe7']
+checksums = [
+    '0d9cf9dbbb3b4215afebe7fa4748b012e406dd1f1ad2a61b993ac04adcb94eaa', # spark-3.1.2-bin-hadoop3.2.tgz
+    ] 
 
 dependencies = [
     ('Python', '3.9.5'),
