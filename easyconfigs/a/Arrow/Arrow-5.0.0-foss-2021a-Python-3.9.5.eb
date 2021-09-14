@@ -28,7 +28,7 @@ builddependencies = [
 # Arrow strongly prefers included jemalloc, so not including it as a dependency
 dependencies = [
     ('Python', '3.9.5'),
-    ('SciPy-bundle', '2021.05', versionsuffix),  # for numpy
+    ('SciPy-bundle', '2021.05'),  # for numpy
     ('Boost', '1.76.0'),
 ]
 
