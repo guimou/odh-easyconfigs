@@ -81,6 +81,8 @@ excluded_tests = {
         'distributed/elastic/multiprocessing/api_test',
         # Test from this suite timeout often. The process group backend is deprecated anyway
         'distributed/rpc/test_process_group_agent',
+        'test_linalg',
+        'test_profiler'
     ]
 }
 
