@@ -1,0 +1,31 @@
+easyblock = 'PythonPackage'
+
+name = 'torchaudio'
+version = '0.9.0'
+local_pytorch_version = '1.9.0'
+versionsuffix = '-Python-%(pyver)s-PyTorch-%s' % local_pytorch_version
+
+homepage = 'https://github.com/pytorch/audio'
+description = """ Data manipulation and transformation for audio signal
+processing, powered by PyTorch """
+
+toolchain = {'name': 'foss', 'version': '2021a'}
+
+source_urls = ['https://github.com/pytorch/audio/archive']
+sources = ['v%(version)s.tar.gz']
+checksums = [
+    'da8665cf0644ed3cf7f2d2e0f95fc19ccb500500d23448b1d34904dfb99a1182',  # audio-0.9.0.tar.gz
+    ]
+
+dependencies = [
+    ('Python', '3.9.5'),
+    ('SciPy-bundle', '2021.05'),
+    ('PyTorch', '1.9.0'),
+    ('SoX', '14.4.2'),
+]
+
+download_dep_fail = True
+use_pip = True
+sanity_pip_check = True
+
+moduleclass = 'tools'
