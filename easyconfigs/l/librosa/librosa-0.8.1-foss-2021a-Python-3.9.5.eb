@@ -9,10 +9,6 @@ description = "Python module for audio and music processing"
 
 toolchain = {'name': 'foss', 'version': '2021a'}
 
-builddependencies = [
-    ('libsndfile', '1.0.31'),
-]
-
 dependencies = [
     ('Python', '3.9.5'),
     ('SciPy-bundle', '2021.05'),
@@ -35,6 +31,9 @@ exts_list = [
     }),
     ('pooch', '1.5.1', {
         'checksums': ['57ab0c43e9c5bd81227b08b9931435d71c118cd53339cc5925123a740f40b312'],
+    }),
+    ('cffi', '1.14.6', {
+        'checksums': ['c9a875ce9d7fe32887784274dd533c57909b7b1dcadcc128a2ac21331a9765dd'],
     }),
     (name, version, {
         'checksums': ['c53d05e768ae4a3e553ae21c2e5015293e5efbfd5c12d497f1104cb519cca6b3'],
