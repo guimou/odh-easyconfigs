@@ -32,6 +32,9 @@ exts_list = [
     ('pooch', '1.5.1', {
         'checksums': ['57ab0c43e9c5bd81227b08b9931435d71c118cd53339cc5925123a740f40b312'],
     }),
+    ('SoundFile', '0.10.3.post1', {
+        'checksums': ['490cff42650733d1832728b937fe99fa1802896f5ef4d61bcf78cf7ebecb107b'],
+    }),
     (name, version, {
         'checksums': ['c53d05e768ae4a3e553ae21c2e5015293e5efbfd5c12d497f1104cb519cca6b3'],
     }),
