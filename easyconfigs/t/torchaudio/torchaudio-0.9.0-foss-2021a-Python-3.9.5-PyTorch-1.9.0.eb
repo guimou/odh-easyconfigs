@@ -30,7 +30,7 @@ dependencies = [
     ('SciPy-bundle', '2021.05'),
     ('PyTorch', '1.9.0'),
     ('SoX', '14.4.2'),
-    ('librosa', '0.8.1','-Python-%(pyver)s),
+    ('librosa', '0.8.1','-Python-%(pyver)s'),
 ]
 
 preinstallopts = "cp -a %(builddir)s/kaldi*/* %(builddir)s/audio-%(version)s/third_party/kaldi/submodule && "
