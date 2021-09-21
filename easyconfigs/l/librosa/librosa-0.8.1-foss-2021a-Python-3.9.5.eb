@@ -1,0 +1,40 @@
+easyblock = 'PythonBundle'
+
+name = 'librosa'
+version = '0.8.1'
+versionsuffix = '-Python-%(pyver)s'
+
+homepage = 'https://librosa.github.io'
+description = "Python module for audio and music processing"
+
+toolchain = {'name': 'foss', 'version': '2021a'}
+
+dependencies = [
+    ('Python', '3.9.5'),
+    ('SciPy-bundle', '2021.05', versionsuffix),
+    ('FFmpeg', '4.3.2'),
+    ('matplotlib', '3.4.2', versionsuffix),
+    ('scikit-learn', '0.24.2', versionsuffix),
+    ('numba', '0.53.1', versionsuffix),
+    ('libsndfile', '1.0.31'),
+]
+
+exts_list = [
+    ('audioread', '2.1.9', {
+        'checksums': ['a3480e42056c8e80a8192a54f6729a280ef66d27782ee11cbd63e9d4d1523089'],
+    }),
+    ('SoundFile', '0.10.3.post1', {
+        'checksums': ['490cff42650733d1832728b937fe99fa1802896f5ef4d61bcf78cf7ebecb107b'],
+    }),
+    ('resampy', '0.2.2', {
+        'checksums': ['62af020d8a6674d8117f62320ce9470437bb1d738a5d06cd55591b69b463929e'],
+    }),
+    (name, version, {
+        'checksums': ['c53d05e768ae4a3e553ae21c2e5015293e5efbfd5c12d497f1104cb519cca6b3'],
+    }),
+]
+
+use_pip = True
+sanity_pip_check = True
+
+moduleclass = 'lib'
