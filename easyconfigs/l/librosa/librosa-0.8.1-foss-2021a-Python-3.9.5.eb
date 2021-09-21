@@ -9,6 +9,10 @@ description = "Python module for audio and music processing"
 
 toolchain = {'name': 'foss', 'version': '2021a'}
 
+builddependencies = [
+    ('libsndfile', '1.0.31'),
+]
+
 dependencies = [
     ('Python', '3.9.5'),
     ('SciPy-bundle', '2021.05'),
