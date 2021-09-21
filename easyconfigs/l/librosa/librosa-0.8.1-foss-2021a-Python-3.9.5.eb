@@ -11,11 +11,11 @@ toolchain = {'name': 'foss', 'version': '2021a'}
 
 dependencies = [
     ('Python', '3.9.5'),
-    ('SciPy-bundle', '2021.05', versionsuffix),
+    ('SciPy-bundle', '2021.05'),
     ('FFmpeg', '4.3.2'),
-    ('matplotlib', '3.4.2', versionsuffix),
-    ('scikit-learn', '0.24.2', versionsuffix),
-    ('numba', '0.53.1', versionsuffix),
+    ('matplotlib', '3.4.2'),
+    ('scikit-learn', '0.24.2'),
+    ('numba', '0.53.1'),
     ('libsndfile', '1.0.31'),
 ]
 
