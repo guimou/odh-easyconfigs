@@ -23,19 +23,19 @@ checksums = [
     '54b417ec2f505249c06f10cc12c0154840af54f3f6ca020b76b0534baf7e5a17',  # kaldi
 ]
 
-builddependencies = [('CMake', '3.20.1')]
+builddependencies = [
+    ('CMake', '3.20.1'),
+    ('pkg-config', '0.29.2')
+]
 
 dependencies = [
     ('Python', '3.9.5'),
     ('SciPy-bundle', '2021.05'),
     ('PyTorch', '1.9.0'),
-    ('SoX', '14.4.2'),
     ('librosa', '0.8.1','-Python-%(pyver)s'),
 ]
 
 preinstallopts = "cp -a %(builddir)s/kaldi*/* %(builddir)s/audio-%(version)s/third_party/kaldi/submodule && "
-
-configopts = '-DBUILD_TORCHAUDIO_PYTHON_EXTENSION=ON '
 
 download_dep_fail = True
 use_pip = True
