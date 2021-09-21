@@ -29,6 +29,9 @@ exts_list = [
     ('resampy', '0.2.2', {
         'checksums': ['62af020d8a6674d8117f62320ce9470437bb1d738a5d06cd55591b69b463929e'],
     }),
+    ('pooch', '1.5.1', {
+        'checksums': ['57ab0c43e9c5bd81227b08b9931435d71c118cd53339cc5925123a740f40b312'],
+    }),
     (name, version, {
         'checksums': ['c53d05e768ae4a3e553ae21c2e5015293e5efbfd5c12d497f1104cb519cca6b3'],
     }),
