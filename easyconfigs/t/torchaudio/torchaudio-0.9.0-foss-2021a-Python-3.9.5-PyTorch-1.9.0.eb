@@ -32,7 +32,7 @@ dependencies = [
     ('SoX', '14.4.2'),
 ]
 
-preinstallopts = "cp -a %(builddir)s/kaldi*/* %(builddir)s/torchaudio-%(version)s/third_party/kaldi/submodule && "
+preinstallopts = "cp -a %(builddir)s/kaldi*/* %(builddir)s/audio-%(version)s/third_party/kaldi/submodule && "
 
 configopts = '-DBUILD_TORCHAUDIO_PYTHON_EXTENSION=ON '
 
