@@ -1,4 +1,4 @@
-easyblock = 'PythonPackage'
+easyblock = 'ConfigureMakePythonPackage'
 
 name = 'torchaudio'
 version = '0.9.0'
@@ -38,7 +38,7 @@ dependencies = [
 
 preinstallopts = "cp -a %(builddir)s/kaldi*/* %(builddir)s/audio-%(version)s/third_party/kaldi/submodule && "
 
-modextravars = {'BUILD_SOX': 'OFF', 'BUILD_KALDI': 'ON', 'BUILD_TORCHAUDIO_PYTHON_EXTENSION': 'ON'}
+configopts = '-DBUILD_TORCHAUDIO_PYTHON_EXTENSION=ON -DBUILD_SOX=ON -DBUILD_KALDI=ON'
 
 download_dep_fail = True
 use_pip = True
