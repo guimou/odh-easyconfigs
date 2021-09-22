@@ -37,7 +37,7 @@ dependencies = [
 
 preinstallopts = "cp -a %(builddir)s/kaldi*/* %(builddir)s/audio-%(version)s/third_party/kaldi/submodule && "
 
-configopts = '-DBUILD_TORCHAUDIO_PYTHON_EXTENSION=ON -DBUILD_SOX=ON -DBUILD_KALDI=ON'
+modextravars = {'BUILD_SOX': 'ON', 'BUILD_KALDI': 'ON', 'BUILD_TORCHAUDIO_PYTHON_EXTENSION': 'ON'}
 
 download_dep_fail = True
 use_pip = True
